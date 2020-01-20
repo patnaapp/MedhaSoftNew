@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+    android:layout_marginTop="12dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lin_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:background="@drawable/borderrows"
+        android:weightSum="1">
+        <!--<TextView-->
+            <!--android:id="@+id/txtBenID"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone"/>-->
+
+        <TextView
+            android:id="@+id/textViewSlNo"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="SL No"
+            android:textColor="#0026C2"/>
+
+
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorPrimary" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/textView"-->
+            <!--android:layout_width="75dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="AdmNo"-->
+            <!--android:textColor="#0026C2"/>-->
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/tv_benName"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="BeneficieryName"
+            android:lines="3"
+            android:textColor="#0026C2" />
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorPrimary" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_Fname"-->
+            <!--android:layout_width="95dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Father Name"-->
+            <!--android:lines="3"-->
+            <!--android:textColor="#0026C2" />-->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/textView_fn"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+           android:layout_weight="0.1"
+            android:text="FATHER \nNAME"
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="#0026C2"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/textView_mn"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+           android:layout_weight="0.1"
+            android:text="MOTHER \nNAME"
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="#0026C2"/>
+        <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorPrimary" />-->
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_mob"-->
+            <!--android:layout_width="174dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="0.1"-->
+            <!--android:text="Mobile No."-->
+            <!--android:gravity="center"-->
+            <!--android:lines="3"-->
+            <!--android:textColor="#0026C2"/>-->
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/tv_others"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Others"
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="#0026C2"/>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/tv_benNmAsBank"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Beneficiery Name as Per Bank"
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="#0026C2"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/tv_benacc"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="Beneficery Account No."
+            android:gravity="center"
+            android:lines="3"
+            android:textColor="#0026C2"/>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+        <!--<CheckBox-->
+
+            <!--android:textColor="@android:color/black"-->
+            <!--android:layout_weight="0.1"-->
+            <!--android:id="@+id/checkBox"-->
+            <!--android:layout_width="55dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentTop="true"/>-->
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radio_Y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y"
+               />
+
+            <RadioButton
+                android:id="@+id/radio_N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</RelativeLayout>

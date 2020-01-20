@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SearchUniqueNoManual">
+    <include
+        android:id="@+id/header"
+        layout="@layout/headerhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@drawable/gradentbutton"
+        android:layout_marginTop="25dp"
+        android:id="@+id/linlay"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unique Number:-"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#0A1C66"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtsearch"
+                android:background="@drawable/edittext_style"
+                android:layout_weight="0.9"
+                android:hint="Enter unique number"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:id="@+id/btnsearch"
+                android:src="@drawable/search"
+                android:layout_width="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linlay"
+    android:id="@+id/linear_rjct"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="10dp"
+        android:background="#54777E"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/totalrjct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="TotalData :-"
+            android:textColor="#0C0B0B"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalReprtrjct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="TotalDataReport :-"
+            android:textColor="#0C0B0B"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#54777E"
+        android:layout_below="@+id/lin11"
+
+        android:id="@+id/lin12"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:id="@+id/totalearlierrjct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="0.5"
+            android:text="TotalDataEarlier :-"
+            android:textColor="#0C0B0B" />
+        <TextView
+            android:id="@+id/totalremainingrjct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TotalDataRemaning :-"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:textColor="#0C0B0B" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        android:padding="10dp"
+        android:weightSum="1">
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/pdftotcount"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.5"-->
+        <!--android:text="Total Count :-"-->
+        <!--android:textColor="#0E0D0D"-->
+        <!--android:textStyle="bold" />-->
+
+        <TextView
+            android:id="@+id/pdflink_rjct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="Pdf Link "
+
+            android:textColor="#0D6B77"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/lin_remraks"
+        android:background="@drawable/borderrows"
+
+        android:layout_below="@+id/lin12"
+        android:padding="10dp"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Reason For Rejection:-"
+                android:textStyle="bold"
+                android:textColor="#0D143C"
+                />
+
+            <EditText
+                android:id="@+id/edtremarks"
+                android:background="@drawable/edittext_style"
+                android:layout_weight="0.7"
+                android:layout_width="match_parent"
+                android:hint="Enter reason for rejection"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lin_remraks"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lin2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtpdfNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:layout_below="@+id/lin2"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+
+                android:background="@drawable/orangebuttonshapereject"
+                android:text="Reject Unique Number"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:id="@+id/btnreject"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

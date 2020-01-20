@@ -1,0 +1,159 @@
+<resources>
+
+    <string name="app_name">MEDHA SOFT</string>
+    <string name="app_namehn">मेधा सॉफ्ट</string>
+    <string name="app_version">App Version</string>
+    <string name="update">Update</string>
+    <string name="ignore">Ignore</string>
+    <string name="ok">OK</string>
+    <string name="okhn">ओके</string>
+    <string name="field_required">This field is required</string>
+    <string name="Invalid_Number">Mobile Number is Incorrect</string>
+    <string name="invalid_password">Password is too short</string>
+    <string name="password_not_match">Password did not match</string>
+    <string name="wrong_device_title">गलत डिवाइस !</string>
+    <string name="authentication_failed">Authentication Failed !</string>
+    <string name="wrong_device_text">This device is not registered in your account !</string>
+    <string name="server_down_title">Internet / Server Down  !</string>
+    <string name="server_down_text">इंटरनेट कनेक्शन उपलब्ध नहीं !</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="login_head">लॉग इन</string>
+    <string name="logout">लॉग आउट करें</string>
+    <string name="Sync">सिंक्रनाइज़ करें</string>
+    <string name="username">User Name </string>
+    <string name="userId">यूज़र आईडी</string>
+    <string name="pass">पासवर्ड</string>
+    <string name="enter_username">Enter User Name</string>
+    <string name="enter_userId">यूज़र आईडी दर्ज करें</string>
+    <string name="enter_pass">पासवर्ड दर्ज करें</string>
+    <string name="hostal_img">-------- छात्रावास का फोटो खिचें --------</string>
+    <string name="hostalimg">छात्रावास का फोटो खिचें</string>
+    <string name="Student_img">-------- छात्र का एवं जाती प्रमाण पत्र का फोटो खिचें --------</string>
+    <string name="District_Wise_Insp">-------- छात्रावास का निरीक्षण करें--------</string>
+    <string name="hostal_Deatils">-------- छात्रावास का निरीक्षण का फोटो खिचें  --------</string>
+    <string name="loading_fail"> लोडिंग फेल !</string>
+    <string name="failed">Fail !</string>
+    <string name="login_failed">गलत उपयोगकर्ता आईडी / पासवर्ड</string>
+    <string name="no_internet_title">No Internet Connection</string>
+    <string name="no_internet_msg">No Internet Connection. Please Check Your Internet Connection!</string>
+    <string name="turnon_now">TURN ON</string>
+    <string name="turnon_later">NOT NOW</string>
+
+    <string name="no_internet_titlehn">इंटरनेट कनेक्शन उपलब्ध नहीं।</string>
+    <string name="no_internet_msghn">इंटरनेट कनेक्शन उपलब्ध नहीं है। कृपया नेटवर्क कनेक्शन चालू करें</string>
+    <string name="turnon_nowhn">कनेक्शन चालू करें</string>
+    <string name="turnon_laterhn">बाद में</string>
+
+    <string name="report_title">IMPORT TO PDF</string>
+    <string name="report_msg">Click on Hindi or English to generate a pdf report in that language.\nNOTE: It will take few or more seconds to generate PDF file depands on number of records.</string>
+    <!--<string name="report_msg">Click on OK to generate a report.</string>-->
+    <string name="report_titlehn">पीडीएफ में आयात</string>
+    <string name="report_msghn">हिंदी या अंग्रेजी में रिपोर्ट तैयार करने के लिए उस भाषा के बटन पर क्लिक करें |\nनोट: पीडीएफ फाइल बनाने में कुछ या अधिक सेकंड लगेंगे, यह रिकॉर्ड की संख्या पर निर्भर करता है।</string>
+    <!--<string name="report_msghn">रिपोर्ट तैयार करने के लिए ओके पर क्लिक करें|</string>-->
+
+    <string name="continue_offline">Work off line  </string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="cancel">CANCEL</string>
+    <string name="cancehn">कैंसिल</string>
+
+    <string name="yes">YES</string>
+    <string name="yeshn">हाॅं</string>
+    <string name="no">NO</string>
+    <string name="nohn">नही</string>
+
+    <string name="submit">SUBMIT</string>
+    <string name="submithn">संरक्षित करें</string>
+    <string name="upload">UPLOAD</string>
+    <string name="uploadhn">अपलोड</string>
+    <string name="pdfviewer">Please Download PDF  Viewer</string>
+    <string name="pdfviewerhn">कृपया पीडीएफ दर्शक(व्यूअर) डाउनलोड करें</string>
+
+
+    <string name="username_password_notmatched">The name or password of the user is not correct !</string>
+    <string name="Dept">विभाग : </string>
+    <string name="Dist">जिला : </string>
+    <string name="Blk">प्रखंड : </string>
+    <string name="Hostal">छात्रावास : </string>
+    <string name="name">नाम : </string>
+    <string name="StdFname">पिता का नाम : </string>edit
+    <string name="edit">एडिट</string>
+    <string name="enrty">न्यू एन्ट्री</string>
+
+    <string name="pendingdata">पेंडिंग रिकॉर्ड = </string>
+
+    <string name="schemes">योजनाएँ</string>
+    <string name="id">आईडी : </string>
+    <string name="stdphoto">छात्र का फोटो खिचें : </string>
+    <string name="stdccphoto">कास्ट प्रमाणपत्र का फोटो खिचें : </string>
+    <string name="photwithclidren">शिक्षक के साथ बच्चों का फोटो खिचें : </string>
+    <string name="photwithworkinman">कामकाजी आदमी के साथ मेष / रसोईघर का फोटो खिचें : </string>
+    <string name="photwithgoods">समान के साथ स्टोर रूम का फोटो खिचें : </string>
+    <string name="photofhostel">छात्रावास का फोटो खिचें : </string>
+    <string name="editshow">प्रतिवेदन दर्ज की गई सूची  </string>
+    <string name="hostlist">छात्रावास की सूची  </string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--<string name="simple_circle_button_example">Simple Circle Button Example</string>-->
+    <!--<string name="text_inside_circle_button_example">Text Inside Circle Button Example</string>-->
+    <!--<string name="text_outside_circle_button_example">Text Outside Circle Button Example</string>-->
+    <!--<string name="ham_button_example">Ham Button Example</string>-->
+    <!--<string name="square_and_piece_corner_radius_example">Square And Piece Corner Radius Example</string>-->
+    <!--<string name="boom_example">Boom Example</string>-->
+    <!--<string name="button_place_alignment_example">Button Place Alignment Example</string>-->
+    <!--<string name="order_example">Order Example</string>-->
+    <!--<string name="actionbar_example">ActionBar Example</string>-->
+    <!--<string name="tool_bar_example">ToolBar Example</string>-->
+    <!--<string name="draggable_example">Draggable Example</string>-->
+    <!--<string name="ease_example">Ease Example</string>-->
+    <!--<string name="listener_example">Listener Example</string>-->
+    <!--<string name="control_example">Control Example</string>-->
+    <!--<string name="share_example">Share Example</string>-->
+    <!--<string name="list_example">List Example</string>-->
+    <!--<string name="recycler_view_example">Recycler View Example</string>-->
+    <!--<string name="fragment_example">Fragment Example</string>-->
+    <!--<string name="change_boom_button_example">Change Boom Button Example</string>-->
+    <!--<string name="three_d_animation_example">3D Animation Example</string>-->
+    <!--<string name="custom_position_example">Custom Position Example</string>-->
+    <!--<string name="fade_views_example">Fade Views Example</string>-->
+    <!--<string name="orientation_example">Orientation Example</string>-->
+
+    <!--<string name="text_inside_circle_button_text_normal">Text Inside Circle Button(Normal)</string>-->
+    <!--<string name="text_inside_circle_button_text_highlighted">Text Inside Circle Button(Highlighted)</string>-->
+    <!--<string name="text_inside_circle_button_text_unable">Text Inside Circle Button(Unable)</string>-->
+
+    <!--<string name="text_outside_circle_button_text_normal">Text Outside Circle Button(Normal)</string>-->
+    <!--<string name="text_outside_circle_button_text_highlighted">Text Outside Circle Button(Highlighted)</string>-->
+    <!--<string name="text_outside_circle_button_text_unable">Text Outside Circle Button(Unable)</string>-->
+
+    <!--<string name="text_ham_button_text_normal">Ham Button Text(Normal)</string>-->
+    <!--<string name="text_ham_button_text_highlighted">Ham Button Text(Highlighted)</string>-->
+    <!--<string name="text_ham_button_text_unable">Ham Button Text(Unable)</string>-->
+    <!--<string name="text_ham_button_sub_text_normal">Ham Button Sub Text(Normal)</string>-->
+    <!--<string name="text_ham_button_sub_text_highlighted">Ham Button Sub Text(Highlighted)</string>-->
+    <!--<string name="text_ham_button_sub_text_unable">Ham Button Sub Text(Unable)</string>-->
+
+
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
+    <string name="send_email_text">Send Email</string>
+    <string name="mail_intent_chooser_text">Send mail...</string>
+    <string name="no_email_client_error">There are no email clients installed.</string>
+    <string name="copy_text">Copy to clipboard</string>
+    <string name="clipboard_copy_successful_message">Copied to clipboard.</string>
+
+
+    <string name="no_internet_connection">इंटरनेट कनेक्शन नहीं है   </string>
+    <string name="enable_internet_for_firsttime">कृप्या पहली बार के लिए इंटरनेट कनेक्शन ऑन करें !</string>
+
+    <string name="turnon_internet">कृप्या  इंटरनेट कनेक्शन ऑन करें  </string>
+
+
+</resources>

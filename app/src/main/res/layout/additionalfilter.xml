@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:text="Enter Student Name ( छात्र का नाम दर्ज करें )"/>
+                <TextView
+                    android:id="@+id/txtAdnStdCount"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circularviewred"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#011752"
+                    android:textSize="6pt"
+                    android:gravity="center"
+                    android:text="1000"
+                    android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/txtStdNameForSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:maxLength="15"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:text="Select Category ( श्रेणी का चयन करें )"/>
+
+            <Spinner
+                android:id="@+id/spnCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:text="Is Minority ? ( क्या अल्पसंख्यक हैं ?)"/>
+            <Spinner
+                android:id="@+id/spnIsMinority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:text="Select Gender ( लिंग का चयन करें )"/>
+            <Spinner
+                android:id="@+id/spnGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:text="Annual income above 1.5 lakhs? ( वार्षिक आय 1.5 लाख से अधिक?)"/>
+            <Spinner
+                android:id="@+id/spnIsBPL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:text="Is Handicapped ? ( क्या दिव्यांग है ?)"/>
+            <Spinner
+                android:id="@+id/spnIsHandicaped"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:textStyle="bold"
+                android:text="No Record ( कोई डेटा नहीं )"/>
+            <Spinner
+                android:id="@+id/spnHavingNonValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_settings"
+        android:title="Log In"
+        android:orderInCategory="100"
+        android:visible="false"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_menu_logout"/>
+    <!--<item android:id="@+id/action_changepass_st"-->
+        <!--android:title="पासवर्ड बदलें"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="never"-->
+       <!--/>-->
+    <item android:id="@+id/action_logout_st"
+        android:title="Logout"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_menu_logout"/>
+    <!--<item android:id="@+id/hindi_key"-->
+        <!--android:title="हिंदी कीबोर्ड डाउनलोड करे"-->
+        <!--android:orderInCategory="100"-->
+        <!--app:showAsAction="never"-->
+        <!--android:icon="@drawable/ic_menu_logout"/>-->
+
+
+</menu>

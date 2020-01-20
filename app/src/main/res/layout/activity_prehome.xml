@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medhasoftsplace"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/header"
+        layout="@layout/headerhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <ToggleButton
+        android:id="@+id/toggle2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginRight="30dp"
+        android:checked="true"
+        android:textOff="Eng"
+        android:textOn="हिन्दी"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/lnheader"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtSchoolName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="School Name"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textSize="9pt"
+            android:textStyle="bold"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/imglogout"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:onClick="onCLick_Logout"-->
+                <!--android:src="@drawable/logout1" />-->
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtDistBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="District "
+            android:textColor="#FFFFFF"
+            android:textSize="8pt"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtTotalStudents"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Total Number of Students"
+                android:textColor="#EBEBEB"
+                android:textSize="8pt"
+                android:textAlignment="center"
+                android:layout_weight=".8" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:clickable="true"
+        android:onClick="onClick_ShowHideMenu">
+
+        <ImageView
+            android:id="@+id/imgMenus"
+            android:layout_width="25dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:tint="#FFF"
+            android:src="@drawable/ic_drawer" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnMenus"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnSync"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:background="@drawable/gradentdd"
+            android:text="SYNCRONIZE DATA"
+            android:onClick="onClick_SyncStudentDetails"
+            android:drawableLeft="@drawable/synall"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:textSize="7pt"
+            android:layout_marginTop="2dp"
+            android:textColor="#2B0000" />
+            <!--<ProgressBar-->
+                <!--android:layout_width="45dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:id="@+id/profressBar1"-->
+                <!--android:layout_marginTop="7dp"-->
+                <!--android:translationZ="7dp"/>-->
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+            <Button
+                android:id="@+id/btnBenDetails"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:background="@drawable/gradentdd"
+                android:text="BENEFICIARY BASIC DETAILS"
+                android:onClick="onCLick_ViewBenRecords"
+                android:drawableLeft="@drawable/editatt"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:textSize="7pt"
+                android:textColor="#2B0000" />
+
+            <TextView
+                android:id="@+id/txtTStd"
+                android:layout_width="65dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circularviewx"
+                android:gravity="center"
+                android:text="1000"
+                android:textColor="#FFFEFE"
+                android:textStyle="bold"
+                android:translationZ="7dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnAttendance"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:background="@drawable/gradentdd"
+            android:text="MARK ATTENDANCE"
+            android:onClick="onCLick_MaintainAttendance"
+            android:drawableLeft="@drawable/editatt"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:textSize="7pt"
+            android:layout_marginTop="2dp"
+            android:textColor="#2B0000" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:background="@drawable/gradentdd"
+                android:text="VIEW REPORT"
+                android:onClick="onCLick_SearchBenRecords"
+                android:drawableLeft="@drawable/viewrec"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:textSize="7pt"
+                android:textColor="#2B0000" />
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:background="@drawable/gradentdd"
+            android:text="DOWNLOAD TOOLS"
+            android:onClick="onCLick_Download"
+            android:drawableLeft="@drawable/keyboard"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:textSize="7pt"
+            android:layout_marginTop="2dp"
+            android:textColor="#2B0000" />
+        
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradexitdd"
+                android:text="EXIT"
+                android:onClick="onCLick_Exit"
+                android:drawableLeft="@drawable/closes"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:textSize="7pt"
+                android:layout_marginTop="2dp"
+                android:textColor="#FFF" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradexitdd"
+                android:text="LOGOUT"
+                android:onClick="onCLick_Logout"
+                android:drawableLeft="@drawable/logout1"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:textSize="7pt"
+                android:layout_marginTop="2dp"
+                android:textColor="#FFF" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnHelp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/transback"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/infobox">
+            <ImageView
+                android:id="@+id/imgInfoClose"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/closes"
+                android:translationZ=".7dp"
+                android:background="@android:color/transparent"/>
+            <ToggleButton
+                android:id="@+id/toggle1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:checked="true"
+                android:textOff="Eng"
+                android:visibility="gone"
+                android:background="@drawable/buttonshapeet"
+                android:textOn="हिन्दी" />
+
+            <TextView
+                android:id="@+id/txtHelpInfo"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_below="@+id/toggle1"
+                android:layout_gravity="top"
+                android:fontFamily="sans-serif"
+                android:gravity="top"
+                android:padding="20dp"
+                android:singleLine="false"
+                android:text="Please follow the Instruction"
+                android:textColor="#00499B" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtHelpInfo"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkDontShowAgain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="Don't show again" />
+
+                <Button
+                    android:id="@+id/btnSkip"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/shape11white"
+                    android:onClick="onClick_Skip"
+                    android:text="SKIP"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnHelpNext"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:layout_margin="5dp"
+                    android:layout_marginRight="1dp"
+                    android:background="@drawable/shape11white"
+                    android:onClick="onClick_ShowNextHelp"
+                    android:text="NEXT"
+                    android:textColor="#FFF"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+    <TextView
+        android:id="@+id/app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="App version"
+        android:layout_margin="5dp"
+        android:textColor="#081D7C"
+        android:textAlignment="center"
+        android:textSize="7pt"
+        android:layout_gravity="bottom"
+        android:textStyle="bold"/>
+</RelativeLayout>

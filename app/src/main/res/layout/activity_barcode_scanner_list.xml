@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/txtmessage"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <LinearLayout
+        android:id="@+id/lin_main"
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:layout_below="@+id/header"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvattendence"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/gradentbutton"
+                android:gravity="center"
+                android:text="ATTENDANCE LESS THEN 75%"
+                android:textColor="#FFFFFF"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtStdCount"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circularviewred"
+                android:gravity="center"
+                android:text="1000"
+                android:textColor="#011752"
+                android:textSize="6pt" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lsthedVal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            >
+                            <TextView
+                                android:id="@+id/pdfno"
+                                android:layout_width="match_parent"
+                                android:textStyle="bold"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:text="Unique No :-"
+                                android:textColor="#0C0B0B" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:background="#54777E"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            >
+
+                            <TextView
+                                android:id="@+id/total"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textStyle="bold"
+                                android:text="TotalData :-"
+                                android:textColor="#0C0B0B" />
+                            <TextView
+                                android:id="@+id/totalReprt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TotalDataReport :-"
+                                android:textStyle="bold"
+                                android:layout_weight="0.5"
+                                android:textColor="#0C0B0B" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:background="#54777E"
+                            android:orientation="horizontal"
+                            android:weightSum="1"
+                            >
+
+                            <TextView
+                                android:id="@+id/totalearlier"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:textStyle="bold"
+                                android:text="TotalDataEarlier :-"
+                                android:textColor="#0C0B0B" />
+                            <TextView
+                                android:id="@+id/totalremaining"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TotalDataRemaning :-"
+                                android:layout_weight="0.5"
+                                android:textStyle="bold"
+                                android:textColor="#0C0B0B" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="1">
+
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/pdftotcount"-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="0.5"-->
+                                <!--android:text="Total Count :-"-->
+                                <!--android:textColor="#0E0D0D"-->
+                                <!--android:textStyle="bold" />-->
+
+                            <TextView
+                                android:id="@+id/pdflink"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:gravity="center"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Pdf Link "
+                                android:textColor="#0D6B77"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="horizontal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="1dp"
+                            android:background="@drawable/gradentbutton"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/txt_Slno"
+                                android:layout_width="75dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:text="SL.NO"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimary" />
+                            <TextView
+                                android:id="@+id/txt_ben"
+                                android:layout_width="145dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:text="Details"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+
+
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimary" />
+                            <TextView
+                                android:id="@+id/txt_Name"
+                                android:layout_width="174dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:text="ACTION"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimary" />
+
+
+                        </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CFC9C9"
+        android:scrollbars="horizontal" />
+</LinearLayout>
+                        </HorizontalScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--android:layout_above="@id/lnBtns"-->
+            <TextView
+                android:id="@+id/tv_final"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_below="@+id/header"
+                android:gravity="center"
+                android:text="All QR CODE VERIFIED SUCCESSFULLY "
+                android:textColor="#247C26"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/lsthedVal"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_gravity="top"-->
+                <!--android:gravity="top">-->
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/my_recycler_view"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#CFC9C9"-->
+                    <!--android:scrollbars="horizontal" />-->
+
+
+            <!--</RelativeLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:id="@+id/btn"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Final Submit"
+        android:background="#009688"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginBottom="110dp"
+        android:onClick="onclick_FinalSubmit"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

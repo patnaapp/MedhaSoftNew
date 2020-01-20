@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <!-- <android.support.v7.widget.Toolbar
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/toolbar"
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/colorPrimary"
+         android:theme="@style/ThemeOverlay.AppCompat.Dark"
+         app:titleTextColor="#ffffffff"
+         app:title="Aadhar Authentication">
+         &lt;!&ndash; title text color for the Toolbar&ndash;&gt;
+     </android.support.v7.widget.Toolbar>-->
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:background="@drawable/lin_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/lnHeading"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtClass"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:text="CLASS"
+            android:textColor="#0f20bf"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spn_class"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_bg"
+            android:imeOptions="actionUnspecified"
+            android:paddingRight="20dp"
+            android:layout_weight=".4"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#43D305" />
+        <TextView
+            android:id="@+id/txtSection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:text="SECTION"
+            android:textColor="#0f20bf"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spn_session"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_bg"
+            android:imeOptions="actionUnspecified"
+            android:paddingRight="20dp"
+            android:layout_weight=".4"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#43D305" />
+        <TextView
+            android:id="@+id/txtPDFHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/showpdfdata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+        <WebView
+            android:id="@+id/showpdfdataWV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <!--<android.support.v7.widget.CardView-->
+
+        <!--android:padding="5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_gravity="center"-->
+            <!--android:weightSum="1"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/text1"-->
+                <!--android:layout_width="86dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Name"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="131dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:gravity="center"-->
+                <!--android:text="F-Name"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textStyle="bold" />-->
+            <!--<TextView-->
+
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_weight="0.4"-->
+                <!--android:text="M-Name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</LinearLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/nodata"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="No Data Found In this Block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:background="#CFC9C9"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

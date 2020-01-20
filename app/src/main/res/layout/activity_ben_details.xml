@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtSubHeader"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="9pt"
+                android:background="@color/colorPrimaryDark"
+                android:text="BENEFICIARY RECORDS"/>
+            <TextView
+                android:id="@+id/txtStdCount"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circularviewred"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#011752"
+                android:textSize="6pt"
+                android:gravity="center"
+                android:text="1000"
+                android:layout_alignParentTop="true"/>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lnBtns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+            <!--<RelativeLayout-->
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<Button-->
+                    <!--android:id="@+id/btnSearch"-->
+                    <!--android:layout_width="300dp"-->
+                    <!--android:layout_height="75dp"-->
+                    <!--android:background="@drawable/gradentsubheader"-->
+                    <!--android:text="VIEW REPORT"-->
+                    <!--android:onClick="onCLick_SearchBenRecords"-->
+                    <!--android:drawableLeft="@drawable/viewrec"-->
+                    <!--android:textAllCaps="false"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:textSize="7pt"-->
+                    <!--android:textColor="#fff" />-->
+
+            <!--</RelativeLayout>-->
+            <Spinner
+                android:id="@+id/spFYear"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:padding="2dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true" />
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnViewEdit"
+                    android:layout_width="300dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/gradentsubheader"
+                    android:text="UPDATE REJECTED RECORDS"
+                    android:onClick="onCLick_ViewEditRecords"
+                    android:drawableLeft="@drawable/edit"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:textSize="7pt"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/txtTStd"
+                    android:layout_width="65dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/circularviewx"
+                    android:gravity="center"
+                    android:text="1000"
+                    android:textColor="#FFFEFE"
+                    android:textStyle="bold"
+                    android:translationZ="7dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:id="@+id/btnViewUpdatedRec"
+                    android:layout_width="300dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/gradentsubheader"
+                    android:text="VIEW UPDATED RECORDS"
+                    android:onClick="onCLick_ViewUpdatedRecords"
+                    android:drawableLeft="@drawable/edited"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:textSize="7pt"
+                    android:textColor="#fff" />
+                <TextView
+                    android:id="@+id/txtCount2"
+                    android:layout_width="65dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/circularview"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:translationZ="7dp"
+                    android:textColor="#B30000"
+                    android:text="0"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_width="300dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/gradentsubheader"
+                    android:text="UPLOAD UPDATED RECORDS"
+                    android:onClick="onCLick_UploadRecords"
+                    android:drawableLeft="@drawable/uploade"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:textSize="7pt"
+                    android:textColor="#FFF" />
+                <TextView
+                    android:id="@+id/txtCount"
+                    android:layout_width="65dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/circularview"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:translationZ="7dp"
+                    android:textColor="#B30000"
+                    android:text="0"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

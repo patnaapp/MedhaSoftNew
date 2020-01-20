@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/gradentbutton">
+
+
+    <ImageView
+        android:id="@+id/img_syncall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="1dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="2dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/txtHeaderName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:text="Medha Soft"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/img_digital"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:layout_marginRight="2dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/digital1"/>
+
+</RelativeLayout>

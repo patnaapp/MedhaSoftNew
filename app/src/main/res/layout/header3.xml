@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/gradentbutton">
+
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:tint="#fff"
+        android:clickable="true"
+        android:onClick="onClick_GoToHomeScreen"
+        android:src="@drawable/homen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHeaderName"
+        android:text="@string/app_name"
+        android:gravity="center_horizontal"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textColor="#FFF"/>
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp"
+        android:clickable="true"
+        android:onClick="onClick_Finish"
+        android:src="@drawable/backbutton" />
+
+</RelativeLayout>

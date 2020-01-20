@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:scrollbars="horizontal"
+        android:background="@drawable/borderrows"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+        <TextView
+            android:id="@+id/tv_slno"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="Sl No"
+            android:textStyle="bold"
+            android:textColor="#0026C2"/>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+        <LinearLayout
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_benName"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="Ben Name"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#0026C2"/>
+            <TextView
+                android:id="@+id/tv_acc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="Account "
+                android:textSize="13sp"
+                android:textColor="#0E0E0F"/>
+
+            <TextView
+                android:id="@+id/tv_ifsc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:text="Ifsc"
+                android:textColor="#141518"/>
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_marginLeft="20sp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Scan"
+            android:gravity="center"
+            android:background="@drawable/orangebuttonshapereject"
+            android:textColor="#D9DCE7"/>
+
+    </LinearLayout>
+</RelativeLayout>
